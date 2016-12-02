@@ -1,0 +1,15 @@
+de:
+  attributes:
+    isbn: "ISBN　Code_de"
+    title: "Author_de"
+    price: "Price_de"
+    publish: "Publisher_de"
+    published: "Published_de"
+  general:
+    greeting:
+      morning: 'Guten Morgen'
+      hello: 'Guten Tag, %{name}!'
+  ctrl:
+    trans:
+      greeting: 'Hello_de World_de'
+  attributes:

@@ -1,0 +1,11 @@
+<% @book = Book.find(1) %>
+This is test book <br />
+books_path-----------------><%= books_path %> <br/>
+books_url------------------><%= books_url %> <br />
+book_path(300)-------------------><%= book_path(300) %> <br />
+book_url(300)--------------------><%= book_url(300) %> <br />
+new_book_path--------------------><%= new_book_path %> <br />
+new_book_url---------------------><%= new_book_url %> <br />
+edit_book_path--------------------><%= edit_book_path(400) %> <br />
+edit_book_url---------------------><%= edit_book_url(400) %><br />
+Book path instance-----------------><%= book_path(@book) %>

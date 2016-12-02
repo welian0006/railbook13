@@ -1,0 +1,23 @@
+<h1>Listing clonets</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @clonets.each do |clonet| %>
+  <tr>
+    <td><%= clonet.name %></td>
+    <td><%= link_to 'Show', clonet %></td>
+    <td><%= link_to 'Edit', edit_clonet_path(clonet) %></td>
+    <td><%= link_to 'Destroy', clonet, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Clonet', new_clonet_path %>

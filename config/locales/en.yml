@@ -1,0 +1,20 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+en:
+  attributes:
+    isbn: "ISBN　Codeド"
+    title: "Author"
+    price: "Price"
+    publish: "Publisher"
+    published: "Published"
+  general:
+    greeting:
+      morning: 'Good Morning,'
+      hello: 'Hello,%{name}!'
+  ctrl:
+    trans:
+      greeting: 'Hello World'
+  result:
+    one: "Only one"
+    other: "%{count} rows"

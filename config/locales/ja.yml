@@ -1,0 +1,31 @@
+ja:
+  attributes:
+    isbn: "ISBNコード"
+    title: "書名"
+    price: "価格"
+    publish: "出版者"
+  general:
+    greeting:
+      morning: 'おはようございます'
+      hello: 'こんにちは、%{name}さん!'
+      default: 'ご挨拶のデフォルト'
+  ctrl:
+    trans:
+      greeting: 'こんにちは、世界'
+  time:
+    formats:
+      default: "%Y/%m/%d %H:%M:%S"
+      long: "%Y年%m月%d日 %H時%M分%S秒"
+  number:
+    currency:
+      format:
+        unit: "円"
+        separator: "."
+        delimiter: ","
+        precision: 3    
+        significant: false
+        strip_insignificant_zeros: false
+  helpers:
+    submit:
+      create: "登録"
+      update: "更新"

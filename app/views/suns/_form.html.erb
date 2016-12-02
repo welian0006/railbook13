@@ -1,0 +1,21 @@
+<%= form_for(@sun) do |f| %>
+  <% if @sun.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@sun.errors.count, "error") %> prohibited this sun from being saved:</h2>
+
+      <ul>
+      <% @sun.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

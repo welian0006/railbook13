@@ -1,0 +1,23 @@
+<h1>Listing suns</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @suns.each do |sun| %>
+  <tr>
+    <td><%= sun.name %></td>
+    <td><%= link_to 'Show', sun %></td>
+    <td><%= link_to 'Edit', edit_sun_path(sun) %></td>
+    <td><%= link_to 'Destroy', sun, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Sun', new_sun_path %>

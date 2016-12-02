@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+<title>class CtrlController - Rails Application Documentation</title>
+
+<link type="text/css" media="screen" href="./rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="./js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/darkfish.js"></script>
+
+
+<body id="top" class="class">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="./index.html">Home</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>app/controllers/ctrl_controller.rb
+  </ul>
+</nav>
+
+    
+  </div>
+
+  <div id="class-metadata">
+    
+    <nav id="parent-class-section" class="section">
+  <h3 class="section-header">Parent</h3>
+  
+  <p class="link"><a href="ApplicationController.html">ApplicationController</a>
+  
+</nav>
+
+    
+    <!-- Method Quickref -->
+<nav id="method-list-section" class="section">
+  <h3 class="section-header">Methods</h3>
+
+  <ul class="link-list">
+    
+    <li><a href="#method-i-after_redirect">#after_redirect</a>
+    
+    <li><a href="#method-i-any_format">#any_format</a>
+    
+    <li><a href="#method-i-cookie">#cookie</a>
+    
+    <li><a href="#method-i-cookie_rec">#cookie_rec</a>
+    
+    <li><a href="#method-i-delete_all_sessions">#delete_all_sessions</a>
+    
+    <li><a href="#method-i-delete_cookie">#delete_cookie</a>
+    
+    <li><a href="#method-i-delete_session">#delete_session</a>
+    
+    <li><a href="#method-i-delete_session_test">#delete_session_test</a>
+    
+    <li><a href="#method-i-final_flash">#final_flash</a>
+    
+    <li><a href="#method-i-from_flash">#from_flash</a>
+    
+    <li><a href="#method-i-get_json">#get_json</a>
+    
+    <li><a href="#method-i-get_xml">#get_xml</a>
+    
+    <li><a href="#method-i-get_xml2">#get_xml2</a>
+    
+    <li><a href="#method-i-has_many_test">#has_many_test</a>
+    
+    <li><a href="#method-i-hash_to_xml">#hash_to_xml</a>
+    
+    <li><a href="#method-i-index">#index</a>
+    
+    <li><a href="#method-i-index2">#index2</a>
+    
+    <li><a href="#method-i-respond_to_all">#respond_to_all</a>
+    
+    <li><a href="#method-i-session_rec">#session_rec</a>
+    
+    <li><a href="#method-i-session_show">#session_show</a>
+    
+    <li><a href="#method-i-simple_redirect">#simple_redirect</a>
+    
+    <li><a href="#method-i-test_atom_feed">#test_atom_feed</a>
+    
+    <li><a href="#method-i-test_date">#test_date</a>
+    
+    <li><a href="#method-i-test_format">#test_format</a>
+    
+    <li><a href="#method-i-test_fullpath">#test_fullpath</a>
+    
+    <li><a href="#method-i-test_js_key">#test_js_key</a>
+    
+    <li><a href="#method-i-xml_erb">#xml_erb</a>
+    
+  </ul>
+</nav>
+
+  </div>
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="./doc/README_FOR_APP.html">README_FOR_APP</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="./Admin.html">Admin</a>
+  
+    <li><a href="./Admin/BooksController.html">Admin::BooksController</a>
+  
+    <li><a href="./Admin/BooksHelper.html">Admin::BooksHelper</a>
+  
+    <li><a href="./ApplicationController.html">ApplicationController</a>
+  
+    <li><a href="./ApplicationHelper.html">ApplicationHelper</a>
+  
+    <li><a href="./Author.html">Author</a>
+  
+    <li><a href="./AuthorsBook.html">AuthorsBook</a>
+  
+    <li><a href="./AuthorsController.html">AuthorsController</a>
+  
+    <li><a href="./AuthorsHelper.html">AuthorsHelper</a>
+  
+    <li><a href="./Book.html">Book</a>
+  
+    <li><a href="./BooksController.html">BooksController</a>
+  
+    <li><a href="./BooksHelper.html">BooksHelper</a>
+  
+    <li><a href="./Clonet.html">Clonet</a>
+  
+    <li><a href="./ClonetsController.html">ClonetsController</a>
+  
+    <li><a href="./ClonetsHelper.html">ClonetsHelper</a>
+  
+    <li><a href="./Config.html">Config</a>
+  
+    <li><a href="./ConfigsController.html">ConfigsController</a>
+  
+    <li><a href="./ConfigsHelper.html">ConfigsHelper</a>
+  
+    <li><a href="./CtrlController.html">CtrlController</a>
+  
+    <li><a href="./CtrlHelper.html">CtrlHelper</a>
+  
+    <li><a href="./Fruit.html">Fruit</a>
+  
+    <li><a href="./FruitsController.html">FruitsController</a>
+  
+    <li><a href="./FruitsHelper.html">FruitsHelper</a>
+  
+    <li><a href="./FunComment.html">FunComment</a>
+  
+    <li><a href="./FunCommentsController.html">FunCommentsController</a>
+  
+    <li><a href="./FunCommentsHelper.html">FunCommentsHelper</a>
+  
+    <li><a href="./HelloController.html">HelloController</a>
+  
+    <li><a href="./HelloHelper.html">HelloHelper</a>
+  
+    <li><a href="./LoginController.html">LoginController</a>
+  
+    <li><a href="./LoginHelper.html">LoginHelper</a>
+  
+    <li><a href="./Review.html">Review</a>
+  
+    <li><a href="./ReviewsController.html">ReviewsController</a>
+  
+    <li><a href="./ReviewsHelper.html">ReviewsHelper</a>
+  
+    <li><a href="./Sport.html">Sport</a>
+  
+    <li><a href="./SportsController.html">SportsController</a>
+  
+    <li><a href="./SportsHelper.html">SportsHelper</a>
+  
+    <li><a href="./TimeConstraint.html">TimeConstraint</a>
+  
+    <li><a href="./User.html">User</a>
+  
+    <li><a href="./UsersController.html">UsersController</a>
+  
+    <li><a href="./UsersHelper.html">UsersHelper</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="class">class CtrlController</h1>
+
+  <div id="description" class="description">
+    
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+
+    <!-- Methods -->
+    
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Instance Methods</h3>
+
+    
+      <div id="method-i-after_redirect" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">after_redirect</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="after_redirect-source">
+            <pre><span class="ruby-comment"># File app/controllers/ctrl_controller.rb, line 113</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">after_redirect</span>
+        <span class="ruby-comment">#render :text=&gt;&quot;after redirect is notice variable is&quot;+alert</span>
+        <span class="ruby-identifier">flash</span>.<span class="ruby-identifier">discard</span>(<span class="ruby-value">:msg</span>)
+        <span class="ruby-identifier">render</span> <span class="ruby-value">:text=</span><span class="ruby-operator">&gt;</span><span class="ruby-string">&quot;after redirect is notice variable is&quot;</span><span class="ruby-operator">+</span><span class="ruby-identifier">flash</span>[<span class="ruby-value">:msg</span>]
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- after_redirect-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- after_redirect-method -->
+
+    
+      <div id="method-i-any_format" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">any_format</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="any_format-source">
+            <pre><span class="ruby-comment"># File app/controllers/ctrl_controller.rb, line 32</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">any_format</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- any_format-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- any_format-method -->
+
+    
+      <div id="method-i-cookie" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">cookie</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="cookie-source">
+            <pre><span class="ruby-comment"># File app/controllers/ctrl_controller.rb, line 64</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">cookie</span>
+        <span class="ruby-ivar">@email</span> = <span class="ruby-identifier">cookies</span>.<span class="ruby-identifier">signed</span>[<span class="ruby-value">:email</span>]
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- cookie-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- cookie-method -->
+
+    
+      <div id="method-i-cookie_rec" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">cookie_rec</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="cookie_rec-source">
+            <pre><span class="ruby-comment"># File app/controllers/ctrl_controller.rb, line 68</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">cookie_rec</span>
+        <span class="ruby-identifier">cookies</span>.<span class="ruby-identifier">signed</span>[<span class="ruby-value">:email</span>] = {<span class="ruby-value">:value=</span><span class="ruby-operator">&gt;</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:email</span>],<span class="ruby-value">:expires=</span><span class="ruby-operator">&gt;</span><span class="ruby-value">3</span>.<span class="ruby-identifier">months</span>.<span class="ruby-identifier">from_now</span>,<span class="ruby-value">:http_only=</span><span class="ruby-operator">&gt;</span><span class="ruby-keyword">true</span>}
+        <span class="ruby-identifier">render</span> <span class="ruby-value">:text=</span><span class="ruby-operator">&gt;</span><span class="ruby-string">&#39;クッキーを保存しました&#39;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- cookie_rec-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- cookie_rec-method -->
+
+    
+      <div id="method-i-delete_all_sessions" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">delete_all_sessions</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="delete_all_sessions-source">
+            <pre><span class="ruby-comment"># File app/controllers/ctrl_controller.rb, line 100</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">delete_all_sessions</span>
+        <span class="ruby-identifier">reset_session</span>
+        <span class="ruby-identifier">render</span> <span class="ruby-value">:text=</span><span class="ruby-operator">&gt;</span><span class="ruby-string">&#39;全てのセッションは削除しました&#39;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- delete_all_sessions-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- delete_all_sessions-method -->
+
+    
+      <div id="method-i-delete_cookie" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">delete_cookie</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="delete_cookie-source">
+            <pre><span class="ruby-comment"># File app/controllers/ctrl_controller.rb, line 73</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">delete_cookie</span>
+        <span class="ruby-identifier">cookies</span>.<span class="ruby-identifier">delete</span>(<span class="ruby-value">:email</span>)
+        <span class="ruby-comment">#cookies[:email].delete</span>
+        <span class="ruby-identifier">render</span> <span class="ruby-value">:text=</span><span class="ruby-operator">&gt;</span><span class="ruby-string">&#39;クッキーは削除しました&#39;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- delete_cookie-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- delete_cookie-method -->
+
+    
+      <div id="method-i-delete_session" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">delete_session</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="delete_session-source">
+            <pre><span class="ruby-comment"># File app/controllers/ctrl_controller.rb, line 88</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">delete_session</span>
+        <span class="ruby-identifier">session</span>.<span class="ruby-identifier">delete</span>(<span class="ruby-value">:email</span>)
+        <span class="ruby-identifier">render</span> <span class="ruby-value">:text=</span><span class="ruby-operator">&gt;</span><span class="ruby-string">&#39;セッションを削除しました&#39;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- delete_session-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- delete_session-method -->
+
+    
+      <div id="method-i-delete_session_test" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">delete_session_test</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="delete_session_test-source">
+            <pre><span class="ruby-comment"># File app/controllers/ctrl_controller.rb, line 93</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">delete_session_test</span>
+        <span class="ruby-identifier">session</span>[<span class="ruby-value">:a</span>]=<span class="ruby-string">&quot;apple&quot;</span>
+        <span class="ruby-identifier">session</span>[<span class="ruby-value">:b</span>]=<span class="ruby-string">&quot;banana&quot;</span>
+        <span class="ruby-identifier">session</span>.<span class="ruby-identifier">delete</span>(<span class="ruby-value">:a</span>)
+        <span class="ruby-identifier">render</span> <span class="ruby-value">:text=</span><span class="ruby-operator">&gt;</span><span class="ruby-string">&quot;Now session a is &quot;</span><span class="ruby-operator">+</span><span class="ruby-identifier">session</span>[<span class="ruby-value">:a</span>].<span class="ruby-identifier">to_s</span><span class="ruby-operator">+</span><span class="ruby-string">&quot; session b is &quot;</span><span class="ruby-operator">+</span><span class="ruby-identifier">session</span>[<span class="ruby-value">:b</span>].<span class="ruby-identifier">to_s</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- delete_session_test-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- delete_session_test-method -->
+
+    
+      <div id="method-i-final_flash" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">final_flash</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="final_flash-source">
+            <pre><span class="ruby-comment"># File app/controllers/ctrl_controller.rb, line 138</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">final_flash</span>
+        <span class="ruby-identifier">flash</span>[<span class="ruby-value">:msg</span>] = <span class="ruby-string">&#39;This is now final flash message&#39;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- final_flash-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- final_flash-method -->
+
+    
+      <div id="method-i-from_flash" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">from_flash</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="from_flash-source">
+            <pre><span class="ruby-comment"># File app/controllers/ctrl_controller.rb, line 133</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">from_flash</span>
+        <span class="ruby-identifier">flash</span>[<span class="ruby-value">:msg</span>] = <span class="ruby-string">&quot;This is from flash message&quot;</span>
+        <span class="ruby-identifier">redirect_to</span> <span class="ruby-string">&#39;/ctrl/final_flash&#39;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- from_flash-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- from_flash-method -->
+
+    
+      <div id="method-i-get_json" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">get_json</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="get_json-source">
+            <pre><span class="ruby-comment"># File app/controllers/ctrl_controller.rb, line 21</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">get_json</span>
+        <span class="ruby-ivar">@books</span> = <span class="ruby-constant">Book</span>.<span class="ruby-identifier">all</span>
+        <span class="ruby-identifier">render</span> <span class="ruby-value">:json=</span><span class="ruby-operator">&gt;</span><span class="ruby-ivar">@books</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- get_json-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- get_json-method -->
+
+    
+      <div id="method-i-get_xml" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">get_xml</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>around_filter :around_logger</p>
+          
+
+          
+          <div class="method-source-code" id="get_xml-source">
+            <pre><span class="ruby-comment"># File app/controllers/ctrl_controller.rb, line 11</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">get_xml</span>
+        <span class="ruby-ivar">@books</span> = <span class="ruby-constant">Book</span>.<span class="ruby-identifier">all</span>
+        <span class="ruby-identifier">render</span> <span class="ruby-value">:xml=</span><span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@books</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- get_xml-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- get_xml-method -->
+
+    
+      <div id="method-i-get_xml2" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">get_xml2</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="get_xml2-source">
+            <pre><span class="ruby-comment"># File app/controllers/ctrl_controller.rb, line 16</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">get_xml2</span>
+        <span class="ruby-comment">#render :xml=&gt;&#39;&lt;error&gt;123 Failed&lt;/error&gt;&#39;</span>
+        <span class="ruby-identifier">render</span> <span class="ruby-value">:xml=</span><span class="ruby-operator">&gt;</span><span class="ruby-string">&#39;123&#39;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- get_xml2-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- get_xml2-method -->
+
+    
+      <div id="method-i-has_many_test" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">has_many_test</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="has_many_test-source">
+            <pre><span class="ruby-comment"># File app/controllers/ctrl_controller.rb, line 142</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">has_many_test</span>
+        <span class="ruby-ivar">@book</span> = <span class="ruby-constant">Book</span>.<span class="ruby-identifier">find</span>(<span class="ruby-value">1</span>)
+        <span class="ruby-comment">#render :text=&gt;@book.inspect</span>
+        <span class="ruby-ivar">@reviews</span> = <span class="ruby-ivar">@book</span>.<span class="ruby-identifier">reviews</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- has_many_test-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- has_many_test-method -->
+
+    
+      <div id="method-i-hash_to_xml" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">hash_to_xml</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="hash_to_xml-source">
+            <pre><span class="ruby-comment"># File app/controllers/ctrl_controller.rb, line 26</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">hash_to_xml</span>
+        <span class="ruby-comment">#hash = {&quot;a&quot;=&gt;&quot;apple&quot;,&quot;b&quot;=&gt;&quot;banana&quot;,&quot;c&quot;=&gt;&quot;cat&quot;}</span>
+        <span class="ruby-identifier">hash</span> = [<span class="ruby-string">&quot;aa&quot;</span>,<span class="ruby-string">&quot;bb&quot;</span>,<span class="ruby-string">&quot;cc&quot;</span>,<span class="ruby-string">&quot;dd&quot;</span>]
+        <span class="ruby-identifier">render</span> <span class="ruby-value">:xml=</span><span class="ruby-operator">&gt;</span><span class="ruby-identifier">hash</span>.<span class="ruby-identifier">to_xml</span>(<span class="ruby-value">:root=</span><span class="ruby-operator">&gt;</span><span class="ruby-string">&quot;fruit&quot;</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- hash_to_xml-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- hash_to_xml-method -->
+
+    
+      <div id="method-i-index" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">index</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="index-source">
+            <pre><span class="ruby-comment"># File app/controllers/ctrl_controller.rb, line 119</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">index</span>
+        <span class="ruby-identifier">sleep</span> <span class="ruby-value">3</span>
+        <span class="ruby-identifier">render</span> <span class="ruby-value">:text=</span><span class="ruby-operator">&gt;</span><span class="ruby-string">&#39;indexアクションを実行されました&#39;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- index-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- index-method -->
+
+    
+      <div id="method-i-index2" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">index2</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="index2-source">
+            <pre><span class="ruby-comment"># File app/controllers/ctrl_controller.rb, line 124</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">index2</span>
+        <span class="ruby-identifier">sleep</span> <span class="ruby-value">3</span>
+        <span class="ruby-identifier">render</span> <span class="ruby-value">:text=</span><span class="ruby-operator">&gt;</span><span class="ruby-string">&#39;indexアクションを実行されました&#39;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- index2-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- index2-method -->
+
+    
+      <div id="method-i-respond_to_all" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">respond_to_all</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="respond_to_all-source">
+            <pre><span class="ruby-comment"># File app/controllers/ctrl_controller.rb, line 49</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">respond_to_all</span>
+        <span class="ruby-ivar">@books</span> = <span class="ruby-constant">Book</span>.<span class="ruby-identifier">all</span>
+        <span class="ruby-identifier">respond_with</span> <span class="ruby-ivar">@books</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- respond_to_all-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- respond_to_all-method -->
+
+    
+      <div id="method-i-session_rec" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">session_rec</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="session_rec-source">
+            <pre><span class="ruby-comment"># File app/controllers/ctrl_controller.rb, line 83</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">session_rec</span>
+        <span class="ruby-identifier">session</span>[<span class="ruby-value">:email</span>] = <span class="ruby-identifier">params</span>[<span class="ruby-value">:email</span>]
+        <span class="ruby-identifier">render</span> <span class="ruby-value">:text=</span><span class="ruby-operator">&gt;</span><span class="ruby-string">&#39;セッションを保存しました&#39;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- session_rec-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- session_rec-method -->
+
+    
+      <div id="method-i-session_show" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">session_show</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="session_show-source">
+            <pre><span class="ruby-comment"># File app/controllers/ctrl_controller.rb, line 79</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">session_show</span>
+        <span class="ruby-ivar">@email</span> = <span class="ruby-identifier">session</span>[<span class="ruby-value">:email</span>] 
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- session_show-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- session_show-method -->
+
+    
+      <div id="method-i-simple_redirect" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">simple_redirect</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="simple_redirect-source">
+            <pre><span class="ruby-comment"># File app/controllers/ctrl_controller.rb, line 105</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">simple_redirect</span>
+        <span class="ruby-comment">#redirect_to &#39;/ctrl/after_redirect&#39;,:alert=&gt;&#39;Truely after the redirect&#39;</span>
+        <span class="ruby-identifier">flash</span>.<span class="ruby-identifier">keep</span>[<span class="ruby-value">:msg</span>] = <span class="ruby-string">&quot;Book was successfully created&quot;</span>
+        <span class="ruby-comment">#flash.discard(:msg)</span>
+        <span class="ruby-comment">#render :text=&gt;&quot;var is&quot;+flash.now[:msg]</span>
+        <span class="ruby-identifier">redirect_to</span> <span class="ruby-string">&#39;/ctrl/after_redirect&#39;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- simple_redirect-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- simple_redirect-method -->
+
+    
+      <div id="method-i-test_atom_feed" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">test_atom_feed</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="test_atom_feed-source">
+            <pre><span class="ruby-comment"># File app/controllers/ctrl_controller.rb, line 54</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">test_atom_feed</span>
+        <span class="ruby-ivar">@books</span> = <span class="ruby-constant">Book</span>.<span class="ruby-identifier">all</span>
+        
+        <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>
+                <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span>
+                <span class="ruby-identifier">format</span>.<span class="ruby-identifier">xml</span> { <span class="ruby-identifier">render</span> <span class="ruby-value">:xml=</span><span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@books</span>}
+                <span class="ruby-identifier">format</span>.<span class="ruby-identifier">atom</span>
+        <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- test_atom_feed-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- test_atom_feed-method -->
+
+    
+      <div id="method-i-test_date" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">test_date</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="test_date-source">
+            <pre><span class="ruby-comment"># File app/controllers/ctrl_controller.rb, line 148</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">test_date</span>
+        <span class="ruby-identifier">render</span> <span class="ruby-value">:text</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;Date is &quot;</span><span class="ruby-operator">+</span><span class="ruby-constant">Date</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">2016</span>,<span class="ruby-value">11</span>,<span class="ruby-value">12</span>).<span class="ruby-identifier">to_s</span> <span class="ruby-operator">+</span> <span class="ruby-string">&quot;date class is &quot;</span><span class="ruby-operator">+</span><span class="ruby-constant">Date</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">2016</span>,<span class="ruby-value">11</span>,<span class="ruby-value">12</span>).<span class="ruby-identifier">class</span>.<span class="ruby-identifier">to_s</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- test_date-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- test_date-method -->
+
+    
+      <div id="method-i-test_format" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">test_format</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="test_format-source">
+            <pre><span class="ruby-comment"># File app/controllers/ctrl_controller.rb, line 42</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">test_format</span>
+        <span class="ruby-ivar">@books</span> = <span class="ruby-constant">Book</span>.<span class="ruby-identifier">all</span>
+        <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword">do</span>  <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>
+                <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span> { <span class="ruby-identifier">render</span> <span class="ruby-value">:html=</span><span class="ruby-operator">&gt;</span><span class="ruby-ivar">@books</span>}
+        <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- test_format-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- test_format-method -->
+
+    
+      <div id="method-i-test_fullpath" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">test_fullpath</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="test_fullpath-source">
+            <pre><span class="ruby-comment"># File app/controllers/ctrl_controller.rb, line 129</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">test_fullpath</span>
+        <span class="ruby-identifier">render</span> <span class="ruby-value">:text</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&#39;full path is------&gt;&#39;</span><span class="ruby-operator">+</span><span class="ruby-identifier">request</span>.<span class="ruby-identifier">fullpath</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- test_fullpath-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- test_fullpath-method -->
+
+    
+      <div id="method-i-test_js_key" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">test_js_key</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="test_js_key-source">
+            <pre><span class="ruby-comment"># File app/controllers/ctrl_controller.rb, line 152</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">test_js_key</span>
+        <span class="ruby-ivar">@books</span> = <span class="ruby-constant">Book</span>.<span class="ruby-identifier">all</span>
+        <span class="ruby-comment">#render :text =&gt; &#39;first book isbn is &#39;+@books[0](:js).isbn</span>
+        <span class="ruby-comment">#render :text =&gt; &#39;fixture key isbn value is &#39;+books(:js).isbn</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- test_js_key-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- test_js_key-method -->
+
+    
+      <div id="method-i-xml_erb" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">xml_erb</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="xml_erb-source">
+            <pre><span class="ruby-comment"># File app/controllers/ctrl_controller.rb, line 35</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">xml_erb</span>
+        <span class="ruby-ivar">@book</span> = <span class="ruby-constant">Book</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:id</span>])
+        <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>
+                <span class="ruby-identifier">format</span>.<span class="ruby-identifier">xml</span>
+        <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- xml_erb-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- xml_erb-method -->
+
+    
+    </section><!-- public-instance-method-details -->
+  
+  </section><!-- 5Buntitled-5D -->
+
+</div><!-- documentation -->
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 3.12.2.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

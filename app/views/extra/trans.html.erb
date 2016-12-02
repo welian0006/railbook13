@@ -1,0 +1,27 @@
+<%= t 'general.greeting.morning' %><br />
+<%= t 'general.greeting.hello', :name=>'yyamada' %>
+
+<br/>
+<%= url_for(:action=>'view') %>
+<br/>
+<br/>
+<%= number_to_currency(12345)%>
+<br/>
+<br/>
+<%= t :morning, :scope => 'general.greeting' %>
+<br/>
+<%= t :morning, :scope => [:general,:greeting] %>
+<br/>
+<% k = [:general, :greeting] %>
+<%= t :morning, :scope => k %><br />
+Default options: <br />
+<%= t 'general.greeting.night',:default=>'Good Night' %>
+<br/>
+<%= t :night, :default => ['Hello'],
+	:scope => [:general,:greeting]%>
+<br/>
+<br/>
+<%= t 'general.greeting.morning',:locale => 'de' %><br/>
+The below are the results:
+<%= t 'result', :count => 1 %><br/>
+<%= t 'result', :count => 2 %>
