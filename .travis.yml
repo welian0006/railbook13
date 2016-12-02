@@ -1,4 +1,4 @@
 language: ruby
 rvm:
   - 2.2.5
-script: rake test:integration
+script: bundle exec rake test:integration
