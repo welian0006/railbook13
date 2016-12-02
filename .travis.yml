@@ -2,6 +2,5 @@ language: ruby
 rvm:
   - 2.2.5
 script:
-  - gem install activerecord-sqlite3-adapter
   - bundle install
   - bundle exec rake test:integration
