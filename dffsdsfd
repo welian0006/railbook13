@@ -1,0 +1,179 @@
+[33mcommit c807e2a44f1238b8473c927fd4301d8d69c84794[m
+Author: Weiliang Liang <welian0006@163.com>
+Date:   Wed Feb 15 12:56:50 2017 +0800
+
+    changed back
+
+[33mcommit 4b352031ded3fdcdf455c4e8589281eea4b3566b[m
+Author: Weiliang Liang <welian0006@163.com>
+Date:   Wed Feb 15 12:53:26 2017 +0800
+
+    changed admin test
+
+[33mcommit 0bdb5ae67a274e4b7083977f560b1884071b8549[m
+Author: Weiliang Liang <welian0006@163.com>
+Date:   Sat Dec 3 08:24:14 2016 +0800
+
+    coveralls.yml changed
+
+[33mcommit 66ea018032714d97f8aa3bf9173f4ebee4ca847e[m
+Author: Weiliang Liang <welian0006@163.com>
+Date:   Sat Dec 3 08:19:50 2016 +0800
+
+    README.md added
+
+[33mcommit e480ce39b8db850c2987a797a4154eec639b4ba6[m
+Author: Weiliang Liang <welian0006@163.com>
+Date:   Sat Dec 3 08:11:51 2016 +0800
+
+    Gemfile added
+
+[33mcommit bcea87f322109a1ce87b1eeea764481e763eaa79[m
+Author: Weiliang Liang <welian0006@163.com>
+Date:   Sat Dec 3 08:05:20 2016 +0800
+
+    changed test_helper
+
+[33mcommit fa31429da12b8edaf017fa0e25d91d2c61bfb94a[m
+Author: Weiliang Liang <welian0006@163.com>
+Date:   Sat Dec 3 08:01:40 2016 +0800
+
+    changed gem file
+
+[33mcommit 7b2e92735f1835976311386e6339c64f982dd4e8[m
+Author: Weiliang Liang <welian0006@163.com>
+Date:   Sat Dec 3 07:56:01 2016 +0800
+
+    add .coveralls.yml
+
+[33mcommit d39d1585f5e7ce52e3728a0d5326d79a63eba3a6[m
+Author: Weiliang Liang <welian0006@163.com>
+Date:   Sat Dec 3 07:36:05 2016 +0800
+
+    deleted file.txt
+
+[33mcommit 853d1b0aa5d911e7c123d434e0d027d980e68d91[m
+Author: Weiliang Liang <welian0006@163.com>
+Date:   Sat Dec 3 07:35:06 2016 +0800
+
+    file.txt
+
+[33mcommit f37ec5f7cc4721f289abc83e1e10f71652590027[m
+Author: Weiliang Liang <welian0006@163.com>
+Date:   Sat Dec 3 07:33:24 2016 +0800
+
+    deleted file.txt
+
+[33mcommit 04135671920f3edcbc22a401a627659532f3a799[m
+Author: Weiliang Liang <welian0006@163.com>
+Date:   Sat Dec 3 07:30:36 2016 +0800
+
+    added file.txt
+
+[33mcommit 13c6abdcca6da39c08ff1af8734db83eaa0fdada[m
+Author: Weiliang Liang <welian0006@163.com>
+Date:   Sat Dec 3 07:29:21 2016 +0800
+
+    deleted file.txt again
+
+[33mcommit 4b78ef35d000224036354eb8bee2bc9df71712ae[m
+Author: Weiliang Liang <welian0006@163.com>
+Date:   Sat Dec 3 07:26:56 2016 +0800
+
+    file.txt added again
+
+[33mcommit f685869fefdcd35398a8e0ff814cd29fceea5c58[m
+Author: Weiliang Liang <welian0006@163.com>
+Date:   Sat Dec 3 07:23:15 2016 +0800
+
+    deleted file.txt
+
+[33mcommit 701348e249b3514b9178a08936c362fffd83530e[m
+Author: Weiliang Liang <welian0006@163.com>
+Date:   Sat Dec 3 07:20:42 2016 +0800
+
+    added file.txt
+
+[33mcommit 009c8eedac02ec837fb647e3f3ebfbd6c285c0ac[m
+Author: Weiliang Liang <welian0006@163.com>
+Date:   Sat Dec 3 07:14:28 2016 +0800
+
+    deleted a directory
+
+[33mcommit 2bc88df64d51b8ac6508c70bb47d4ec6e470c433[m
+Author: Weiliang Liang <welian0006@163.com>
+Date:   Sat Dec 3 07:02:00 2016 +0800
+
+    Gemfile lock changed
+
+[33mcommit b543f45f94031c37f8f4953646b727bdb6badab0[m
+Author: Weiliang Liang <welian0006@163.com>
+Date:   Sat Dec 3 06:55:46 2016 +0800
+
+    changed travis.yml
+
+[33mcommit a93ffcbe485ad3f6dbb5aae1626eb80a5cb2b279[m
+Author: Weiliang Liang <welian0006@163.com>
+Date:   Sat Dec 3 06:44:29 2016 +0800
+
+    Gemfile
+
+[33mcommit 7081d5cf43c37dc1fe1472cf5e3ba720e092d94a[m
+Author: Weiliang Liang <welian0006@163.com>
+Date:   Sat Dec 3 06:36:15 2016 +0800
+
+    add bundle install
+
+[33mcommit b968c4729629d41d244457432ea6b6dc18a4b90a[m
+Author: Weiliang Liang <welian0006@163.com>
+Date:   Sat Dec 3 06:33:27 2016 +0800
+
+    changed some files
+
+[33mcommit c22a239a26f953a9687ac86bfd719af8858d038c[m
+Author: Weiliang Liang <welian0006@163.com>
+Date:   Sat Dec 3 06:28:15 2016 +0800
+
+    added and deleted something
+
+[33mcommit f67f5d2a6699f9027fa8acbcf10e394109ebda8d[m
+Author: Weiliang Liang <welian0006@163.com>
+Date:   Sat Dec 3 06:24:31 2016 +0800
+
+    add bundle install
+
+[33mcommit a04b81545de1c75fad8636a7368fb82ac621ce78[m
+Author: Weiliang Liang <welian0006@163.com>
+Date:   Sat Dec 3 06:20:36 2016 +0800
+
+    add bunle exec
+
+[33mcommit f651ad6416379cb00569c042909148ee5c96a7e6[m
+Author: Weiliang Liang <welian0006@163.com>
+Date:   Sat Dec 3 06:13:32 2016 +0800
+
+    change ruby version to 2.2.5
+
+[33mcommit 9833fac30e3bff1679fed172545998a057c020df[m
+Author: Weiliang Liang <welian0006@163.com>
+Date:   Sat Dec 3 06:05:10 2016 +0800
+
+    change travis-yml to travis-yaml
+
+[33mcommit f9314f10fdac70cc4129b936c87abd396d5cdd56[m
+Author: Weiliang Liang <welian0006@163.com>
+Date:   Sat Dec 3 06:00:56 2016 +0800
+
+    add .travis.yml within travis-yml directory
+
+[33mcommit 8496ce0cfebd70376be1eb4588772c31822822c7[m
+Author: Weiliang Liang <welian0006@163.com>
+Date:   Sat Dec 3 05:24:59 2016 +0800
+
+    add .travis.yml file
+
+[33mcommit 6739302f131c05b76e9acd34f0ce36782354e3a2[m
+Author: Weiliang Liang <welian0006@163.com>
+Date:   Sat Dec 3 05:01:31 2016 +0800
+
+    add files
