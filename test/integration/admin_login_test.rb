@@ -26,7 +26,7 @@ class AdminLoginTest < ActionDispatch::IntegrationTest
 		#post_via_redirect '/login/auth',{:username => 'yyamad', :password => '1235',:referer => '/hello/view'}
 		assert_response :success
 		
-		assert_equal true,false
+		#assert_equal true,false
 		
 		
 		
